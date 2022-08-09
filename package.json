@@ -2,10 +2,9 @@
   "name": "naruwo-github.github.io",
   "version": "1.0.0",
   "description": "My portfolio site hosted by Github Pages.\\ Please visit [here](https://naruwo-github.github.io/).",
-  "main": "index.js",
+  "source": "./index.html",
   "scripts": {
-    "build": "",
-    "test": ""
+    "start": "parcel ./index.html"
   },
   "repository": {
     "type": "git",
@@ -16,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/naruwo-github/naruwo-github.github.io/issues"
   },
-  "homepage": "https://github.com/naruwo-github/naruwo-github.github.io#readme"
+  "homepage": "https://github.com/naruwo-github/naruwo-github.github.io#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.7.0",
+    "process": "^0.11.10"
+  }
 }
