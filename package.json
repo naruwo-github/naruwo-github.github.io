@@ -1,0 +1,20 @@
+{
+  "name": "naruwo-github.github.io",
+  "version": "1.0.0",
+  "description": "My portfolio site hosted by Github Pages.\\ Please visit [here](https://naruwo-github.github.io/).",
+  "main": "index.js",
+  "scripts": {
+    "build": "",
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naruwo-github/naruwo-github.github.io.git"
+  },
+  "author": "Narumi Nogawa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naruwo-github/naruwo-github.github.io/issues"
+  },
+  "homepage": "https://github.com/naruwo-github/naruwo-github.github.io#readme"
+}
