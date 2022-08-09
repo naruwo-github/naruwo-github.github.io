@@ -1,20 +1,22 @@
+import iconSkill from '../../public/assets/icon_skill.png'
+
 const skillItems = [
   {
-    img: '../assets/icon_skill.png',
+    img: iconSkill,
     name: 'Computer Science',
     text: [
       '学士と修士の計6年間コンピュータサイエンスを専攻していました。コンピュータサイエンスに関して造詣を深めております。'
     ]
   },
   {
-    img: '../assets/icon_skill.png',
+    img: iconSkill,
     name: 'Standard tools for software development',
     text: [
       'Git, Docker, Shell Script, Google Workspaceなどの理解と経験があります。'
     ]
   },
   {
-    img: '../assets/icon_skill.png',
+    img: iconSkill,
     name: 'Knowledge of development methods',
     text: [
       'BDD(振る舞い駆動開発)やTDD(テスト駆動開発)などの基本的な理解があります。それらの知見を踏まえ、品質の高いプログラムを作成するよう常に心がけております。',
@@ -22,7 +24,7 @@ const skillItems = [
     ]
   },
   {
-    img: '../assets/icon_skill.png',
+    img: iconSkill,
     name: 'Frontend Engineering',
     text: [
       'HTML5/CSS3, JavaScript/TypeScript, React.js, Next.js, npm/yarn, Webpack/Parcelなどの理解と経験があります。',
@@ -31,7 +33,7 @@ const skillItems = [
     ]
   },
   {
-    img: '../assets/icon_skill.png',
+    img: iconSkill,
     name: 'Mobile Engineering',
     text: [
       'Swift, Kotlin, Dart(flutter)の3つの技術を用いて、iOS/Androidアプリ開発を経験しています。',
@@ -39,14 +41,14 @@ const skillItems = [
     ]
   },
   {
-    img: '../assets/icon_skill.png',
+    img: iconSkill,
     name: 'Backend Engineering',
     text: [
       'ApacheやNginxを活用してWebサーバを立ち上げることができます。また、MySQLやMongoDBを活用しRDBMS/NoSQLのDBサーバを立ち上げることができます。'
     ]
   },
   {
-    img: '../assets/icon_skill.png',
+    img: iconSkill,
     name: 'DevOps Engineering',
     text: [
       'Jenkinsを活用し、CI/CDパイプラインの構築ができます。',

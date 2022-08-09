@@ -1,19 +1,21 @@
+import worksSampleThumb from '../../public/assets/works-dummy-thumb.jpg'
+
 const worksItems = [
   {
-    ref: 'works-template.html',
-    img: 'img/works-sample-thumb.jpg',
+    ref: 'works.html',
+    img: worksSampleThumb,
     name: '作品名が入る',
     info: 'Design / Coding(Responsive)'
   },
   {
-    ref: 'works-template.html',
-    img: 'img/works-sample-thumb.jpg',
+    ref: 'works.html',
+    img: worksSampleThumb,
     name: '執筆中。。。',
     info: '執筆中。。。'
   },
   {
-    ref: 'works-template.html',
-    img: 'img/works-sample-thumb.jpg',
+    ref: 'works.html',
+    img: worksSampleThumb,
     name: '執筆中。。。',
     info: '執筆中。。。'
   },
