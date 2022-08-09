@@ -2,9 +2,10 @@
   "name": "naruwo-github.github.io",
   "version": "1.0.0",
   "description": "My portfolio site hosted by Github Pages.\\ Please visit [here](https://naruwo-github.github.io/).",
-  "source": "./index.html",
+  "source": "./src/index.html",
   "scripts": {
-    "start": "parcel ./index.html"
+    "start": "parcel ./src/index.html --dist-dir ./docs/",
+    "build": "parcel build ./src/index.html --dist-dir ./docs/"
   },
   "repository": {
     "type": "git",
