@@ -1,4 +1,5 @@
 import { author } from '../config/env'
+import './style.css'
 import navigationItems from './navigationItems'
 
 const Header = () => {
