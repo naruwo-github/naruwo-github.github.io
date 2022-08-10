@@ -8,14 +8,9 @@ const Mv = () => {
         <p className="mv-subtitle">{title}</p>
         <p className="mv-text">
           ユーザーとお客様が心から満足できるアプリケーション/ソフトウェアをお作りいたします。
-          {/*
-          <br className="sp-only">アプリケーション/ソフトウェアをお作りいたします。</br>
-          */}
-          <a href="#skill">SKILL</a>
-          に関連するコーディングはおまかせください。
-          {/*
-          <br className="sp-only">おまかせください。</br>
-          */}
+        </p>
+        <p className="mv-text">
+          <a href="#skill">SKILL</a>に関連するコーディングはおまかせください。
         </p>
       </div>
     </div>

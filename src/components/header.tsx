@@ -2,16 +2,16 @@ import { author } from '../config/env'
 
 const gnavItems = [
   {
+    ref: "#about",
+    val: "ABOUT"
+  },
+  {
     ref: "#works",
     val: "WORKS"
   },
   {
     ref: "#skill",
     val: "SKILL"
-  },
-  {
-    ref: "#about",
-    val: "ABOUT"
   },
   {
     ref: "#contact",

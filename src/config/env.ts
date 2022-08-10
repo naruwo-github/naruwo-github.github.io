@@ -1,2 +1,2 @@
 export const author = 'NARUMI NOGAWA'
-export const title = 'PORTFOLIO'
+export const title = 'FRONTEND DEVELOPER'

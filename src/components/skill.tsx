@@ -5,14 +5,14 @@ const skillItems = [
     img: iconSkill,
     name: 'Computer Science',
     text: [
-      '学士と修士の計6年間コンピュータサイエンスを専攻していました。コンピュータサイエンスに関して造詣を深めております。'
+      '学士と修士の計6年間コンピュータサイエンスを専攻していました。コンピュータサイエンスに関しては少なからず自信があります。'
     ]
   },
   {
     img: iconSkill,
     name: 'Standard tools for software development',
     text: [
-      'Git, Docker, Shell Script, Google Workspaceなどの理解と経験があります。'
+      'Git, Docker, Shell Script, Google Workspaceなどの理解と経験があります。人並みですが面倒くさがり屋なので、プログラムで自動化することも多々あります。'
     ]
   },
   {
