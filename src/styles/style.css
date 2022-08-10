@@ -308,20 +308,6 @@ img {
 }
 
 /*--------------------------------
- フッター
----------------------------------*/
-.footer {
-  padding: 30px;
-  background-color: #333;
-}
-
-.copyright {
-  font-size: 10px;
-  text-align: center;
-  color: #797979;
-}
-
-/*--------------------------------
  下層：Worksページ
 ---------------------------------*/
 .article {
@@ -521,11 +507,6 @@ img {
 
   .profile-body p:not(:last-child) {
     margin-bottom: 20px;
-  }
-
-  /* フッター */
-  .footer {
-    padding: 20px;
   }
 
   /* 下層ページ */

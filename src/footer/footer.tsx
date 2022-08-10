@@ -1,4 +1,5 @@
 import { author } from '../config/env'
+import './style.css'
 
 const Footer = () => {
   return (
