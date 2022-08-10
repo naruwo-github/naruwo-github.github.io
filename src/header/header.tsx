@@ -1,23 +1,5 @@
 import { author } from '../config/env'
-
-const gnavItems = [
-  {
-    ref: "#about",
-    val: "ABOUT"
-  },
-  {
-    ref: "#works",
-    val: "WORKS"
-  },
-  {
-    ref: "#skill",
-    val: "SKILL"
-  },
-  {
-    ref: "#contact",
-    val: "CONTACT"
-  }
-]
+import navigationItems from './navigationItems'
 
 const Header = () => {
   return (
@@ -28,7 +10,7 @@ const Header = () => {
         </h1>
         <nav className="gnav">
           <ul className="gnav-list">
-            {gnavItems.map((item, index) => (
+            {navigationItems.map((item, index) => (
             <li key={index} className="gnav-item">
               <a href={item.ref}>{item.val}</a>
             </li>

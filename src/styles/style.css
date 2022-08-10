@@ -294,7 +294,7 @@ img {
 /*--------------------------------
  ページトップ
 ---------------------------------*/
-.page-top {
+.move-to-top {
   font-weight: bold;
   padding: 10px;
   cursor: pointer;
@@ -302,7 +302,7 @@ img {
   background-color: #4c4c4c;
 }
 
-.page-top .material-icons-outlined {
+.move-to-top .material-icons-outlined {
   vertical-align: bottom;
   color: #fff;
 }
