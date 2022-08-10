@@ -1,5 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import './common/ress.css'
+import './common/style.css'
+import './common/script'
 import Header from './header/header'
 import Mv from './contents/mv'
 import About from './contents/about'
