@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Header from './header/header'
-import Mv from './components/mv'
-import About from './components/about'
-import Works from './components/works'
-import Skill from './components/skill'
-import Contact from './components/contact'
+import Mv from './contents/mv'
+import About from './contents/about'
+import Works from './contents/works'
+import Skill from './contents/skill'
+import Contact from './contents/contact'
 import Footer from './footer/footer'
 
 const domContent = document.getElementById('root') as HTMLElement
