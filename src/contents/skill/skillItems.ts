@@ -1,10 +1,10 @@
-import iconCs from '../../public/assets/icon-cs.png'
-import iconTools from '../../public/assets/icon-tools.png'
-import iconPractice from '../../public/assets/icon-practice.png'
-import iconFront from '../../public/assets/icon-front.png'
-import iconMobile from '../../public/assets/icon-mobile.png'
-import iconBack from '../../public/assets/icon-back.png'
-import iconDevops from '../../public/assets/icon-devops.png'
+import iconCs from '../../../public/assets/icon-cs.png'
+import iconTools from '../../../public/assets/icon-tools.png'
+import iconPractice from '../../../public/assets/icon-practice.png'
+import iconFront from '../../../public/assets/icon-front.png'
+import iconMobile from '../../../public/assets/icon-mobile.png'
+import iconBack from '../../../public/assets/icon-back.png'
+import iconDevops from '../../../public/assets/icon-devops.png'
 
 const skillItems = [
   {
@@ -63,27 +63,4 @@ const skillItems = [
   }
 ]
 
-const Skill = () => {
-  return (
-          <section className="skill section" id="skill">
-        <div className="container">
-          <h2 className="title">SKILL</h2>
-          <div className="skill-list">
-            {skillItems.map((item, index) => (
-            <div key={index} className="skill-item">
-              <p className="skill-img"><img src={item.img} alt=""/></p>
-              <div className="skill-body">
-                <h3 className="skill-name">{item.name}</h3>
-                {item.text.map((sentence, index) => (
-                <p key={index} className="skill-text">{sentence}</p>
-                ))}
-              </div>
-            </div>
-            ))}
-          </div>
-        </div>
-      </section>
-  )
-}
-
-export default Skill
+export default skillItems

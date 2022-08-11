@@ -1,4 +1,4 @@
-import { author } from '../config/env'
+import { AUTHOR } from '../config/env'
 import './style.css'
 import navigationItems from './navigationItems'
 
@@ -7,7 +7,7 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <h1 className="header-logo">
-          <a href=".">{author}</a>
+          <a href=".">{AUTHOR}</a>
         </h1>
         <nav className="gnav">
           <ul className="gnav-list">

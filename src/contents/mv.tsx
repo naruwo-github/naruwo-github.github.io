@@ -1,11 +1,11 @@
-import { author, title } from '../config/env'
+import { AUTHOR, TITLE } from '../config/env'
 
 const Mv = () => {
   return (
     <div className="mv">
       <div className="mv-container">
-        <p className="mv-title">{author}</p>
-        <p className="mv-subtitle">{title}</p>
+        <p className="mv-title">{AUTHOR}</p>
+        <p className="mv-subtitle">{TITLE}</p>
         <p className="mv-text">
           ユーザーとお客様が心から満足できるアプリケーション/ソフトウェアをお作りいたします。
         </p>
