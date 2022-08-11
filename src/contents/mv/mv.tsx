@@ -1,4 +1,5 @@
-import { AUTHOR, TITLE } from '../config/env'
+import './style.css'
+import { AUTHOR, TITLE } from '../../config/env'
 
 const Mv = () => {
   return (

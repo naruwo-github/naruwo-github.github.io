@@ -1,0 +1,46 @@
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.profile-img {
+  width: 20%;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+.profile-img img {
+  border-radius: 50%;
+}
+.profile-body {
+  flex: 1;
+}
+
+.profile-body p {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.profile-body p:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .profile {
+    display: block;
+  }
+  .profile-img {
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+
+  .profile-body p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .profile-body p:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}

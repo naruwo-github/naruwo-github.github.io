@@ -1,4 +1,5 @@
-import profileImg from '../../public/assets/myself.png'
+import './style.css'
+import profileImg from '../../../public/assets/myself.png'
 
 const About = () => {
   return (

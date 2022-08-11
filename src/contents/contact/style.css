@@ -1,0 +1,14 @@
+.contact {
+  text-align: center;
+}
+
+.contact-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.contact-text {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+}

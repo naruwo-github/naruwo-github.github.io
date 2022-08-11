@@ -1,3 +1,5 @@
+import './style.css'
+
 const Contact = () => {
   return (
     <section className="contact section" id="contact">
