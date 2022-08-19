@@ -5,7 +5,8 @@
   "source": "./public/index.html",
   "scripts": {
     "start": "parcel ./public/index.html --dist-dir ./dev/",
-    "build": "parcel build ./public/index.html --dist-dir ./docs/"
+    "build": "parcel build ./public/index.html --dist-dir ./docs/",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -23,9 +24,14 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.18.10",
+    "@babel/preset-react": "^7.18.6",
+    "@testing-library/react": "^13.3.0",
     "@types/jquery": "^3.5.14",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
+    "babel-jest": "^28.1.3",
+    "jest": "^28.1.3",
     "parcel": "^2.7.0",
     "process": "^0.11.10",
     "typescript": "^4.7.4"
