@@ -1,14 +1,22 @@
 import { AUTHOR } from '../config/env'
 import './style.css'
 import navigationItems from './navigationItems'
+import { useContext } from 'react'
+import { LanguageContext } from '../app'
 import Switch from 'react-switch'
 import { StyledDiv, StyledLabel } from './style'
 
 const EnglishSwitch = () => {
+  const {isSwitched, setIsSwitched} = useContext(LanguageContext)
   return (
     <StyledDiv>
       <StyledLabel>English</StyledLabel>
-      <Switch onChange={() => {}} checked={false} />
+      <Switch
+        onChange={() => {
+          setIsSwitched(prevState => !prevState)
+        }}
+        checked={isSwitched}
+      />
     </StyledDiv>
   )
 }
