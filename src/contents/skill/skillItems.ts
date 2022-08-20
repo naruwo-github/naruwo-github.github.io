@@ -10,55 +10,79 @@ const skillItems = [
   {
     img: iconCs,
     name: 'Computer Science',
-    text: [
-      '学士と修士の計6年間コンピュータサイエンスを専攻していました。コンピュータサイエンスに関しては少なからず自信があります。'
+    textJp: [
+      'コンピュータサイエンスの学位（学士、修士）があります。'
+    ],
+    textEn: [
+      'I have bachelor/master degree of computer science.'
     ]
   },
   {
     img: iconTools,
     name: 'Standard tools for software development',
-    text: [
-      'Git, Docker, Shell Script, Google Workspaceなどの理解と経験があります。人並みですが面倒くさがり屋なので、プログラムで自動化することも多々あります。'
+    textJp: [
+      'Git, Docker, Shell Script, Vim, Google Workspaceといったツールの理解と経験があります。人並みの面倒くさがり屋なので、プログラム業務改善することもしばしば。'
+    ],
+    textEn: [
+      'Understanding and experience with tools such as Git, Docker, Shell Script, Vim, and Google Workspace. I often improve my work by scripts because of my laziness.',
     ]
   },
   {
     img: iconPractice,
     name: 'Knowledge of development methods',
-    text: [
-      'BDD(振る舞い駆動開発)やTDD(テスト駆動開発)などの基本的な理解があります。それらの知見を踏まえ、品質の高いプログラムを作成するよう常に心がけております。',
+    textJp: [
+      'BDD(振る舞い駆動開発)やTDD(テスト駆動開発)などの基本的な理解があります。それらの知見を踏まえ、品質の高いプログラムを作成します。',
       'Robot Framework, Jest, react-testing-library, Pytestなどのフレームワークの経験があります。'
+    ],
+    textEn: [
+      'Basic understanding of BDD and TDD. Based on those findings, I create a high-quality programs.',
+      'I have experience with frameworks such as Robot Framework, Jest, react-testing-library, Pytest.'
     ]
   },
   {
     img: iconFront,
     name: 'Frontend Engineering',
-    text: [
-      'HTML5/CSS3, JavaScript/TypeScript, React.js, Next.js, npm/yarn, Webpack/Parcelなどの理解と経験があります。',
-      '主観となりますがJavaScriptとTypeScriptは最も好き、そして最も得意な言語です。',
-      'モジュールバンドラーは、既に実行環境が整った状態でその拡張を行うだけでなく、何もない状態から環境構築をした経験が複数回あります。'
+    textJp: [
+      'HTML/CSS, JavaScript/TypeScript, React.js, Next.js, npm/yarn, Webpack/Parcelなどの理解と経験があります。',
+      'モジュールバンドラーは、その拡張だけでなく何もない状態から所望の状態に構築可能です。'
+    ],
+    textEn: [
+      'Understanding and experience with HTML/CSS, JavaScript/TypeScript, React.js, Next.js, npm/yarn, Webpack/Parcel, etc.',
+      'I can design module bundler desired settings from scratch as well as its extensions.'
     ]
   },
   {
     img: iconMobile,
     name: 'Mobile Engineering',
-    text: [
+    textJp: [
       'Swift, Kotlin, Dart(flutter)の3つの技術を用いて、iOS/Androidアプリ開発を経験しています。',
       '特にiOSは5年以上の学習経験と2年程度の実務経験があるため、モノ作りに貢献できる自信があります。'
+    ],
+    textEn: [
+      'I have experience in iOS/Android application development using three technologies: Swift, Kotlin, and Dart(flutter).',
+      'In particular, I have more than 5 years of learning experience and about 2 years of practical experience with iOS, so I am confident that I can contribute to manufacturing with it.'
     ]
   },
   {
     img: iconBack,
     name: 'Backend Engineering',
-    text: [
-      'ApacheやNginxを活用してWebサーバを立ち上げることができます。また、MySQLやMongoDBを活用しRDBMS/NoSQLのDBサーバを立ち上げることができます。'
+    textJp: [
+      'ApacheやNginxを活用してWebサーバを、MySQLやMongoDBを活用しRDBMS/NoSQLのDBサーバを立ち上げることができます。コンテンツキャッシュやロードバランシング、リバースプロキシ、DB最適化等の基本的な理解はあります。'
+    ],
+    textEn: [
+      'I can set up a web server using Apache and Nginx, and an RDBMS/NoSQL DB server using MySQL and MongoDB. Basic understanding of content caching, load balancing, reverse proxies, DB optimization, etc.'
     ]
   },
   {
     img: iconDevops,
     name: 'DevOps Engineering',
-    text: [
+    textJp: [
       'Jenkinsを活用し、CI/CDパイプラインの構築ができます。',
-      'VMインスタンスを立ち上げる、Webサーバやミドルウェアのログ監視を行う程度ですがAWSとGCPの経験があります。'
+      '初歩的ですが、AWSとGCPでVMインスタンスを立ち上げる、Webサーバやミドルウェアのログ監視を行う程度の経験があります。'
+    ],
+    textEn: [
+      'I can setup Jenkins to build a CI/CD pipeline.',
+      'Rudimentary though, I have experience in launching VM instances on AWS and GCP, and monitoring the logs of web servers and middleware.'
     ]
   }
 ]
