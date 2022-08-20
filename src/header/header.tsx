@@ -6,22 +6,9 @@ import { LanguageContext } from '../app'
 import Switch from 'react-switch'
 import { StyledDiv, StyledLabel } from './style'
 
-const EnglishSwitch = () => {
-  const {isSwitched, setIsSwitched} = useContext(LanguageContext)
-  return (
-    <StyledDiv>
-      <StyledLabel>English</StyledLabel>
-      <Switch
-        onChange={() => {
-          setIsSwitched(prevState => !prevState)
-        }}
-        checked={isSwitched}
-      />
-    </StyledDiv>
-  )
-}
-
 const Header = () => {
+  const {isSwitched, setIsSwitched} = useContext(LanguageContext)
+
   return (
     <>
       <header className="header">
@@ -40,7 +27,13 @@ const Header = () => {
           </nav>
         </div>
       </header>
-      <EnglishSwitch/>
+      <StyledDiv>
+        <StyledLabel>English</StyledLabel>
+        <Switch
+          onChange={() => { setIsSwitched(prevState => !prevState) }}
+          checked={isSwitched}
+        />
+      </StyledDiv>
     </>
   )
 }
