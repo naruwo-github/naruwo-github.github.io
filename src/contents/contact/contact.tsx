@@ -1,5 +1,6 @@
 import { useContext } from 'react'
 import { LanguageContext } from '../../app'
+import { MAIL, URL_INSTAGRAM } from '../../config/env'
 import './style.css'
 
 const Contact = () => {
@@ -16,8 +17,8 @@ const Contact = () => {
           }
         </p>
         <div className="contact-list">
-          <a className="contact-item" href="https://www.instagram.com/chan_naru_way/" target="_blank" rel="noopener">Instagram</a>
-          <span className="contact-item">narutyan0711@gmail.com</span>
+          <a className="contact-item" href={URL_INSTAGRAM} target="_blank" rel="noopener">Instagram</a>
+          <span className="contact-item">{MAIL}</span>
         </div>
       </div>
     </section>
