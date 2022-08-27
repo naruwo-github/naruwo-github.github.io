@@ -10,7 +10,13 @@ import Contact from './contents/contact/contact'
 import Footer from './footer/footer'
 import { createContext, useState } from 'react'
 
-export const LanguageContext = createContext()
+type Context = {
+  isSwitched: boolean
+  setIsSwitched: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+// @ts-ignore
+export const LanguageContext = createContext<Context>()
 
 const App = () => {
   const [isSwitched, setIsSwitched] = useState<boolean>(false)

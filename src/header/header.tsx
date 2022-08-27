@@ -30,7 +30,9 @@ const Header = () => {
       <StyledDiv>
         <StyledLabel>English</StyledLabel>
         <Switch
-          onChange={() => { setIsSwitched(prevState => !prevState) }}
+          onChange={() => {
+            setIsSwitched(prevState => !prevState)
+          }}
           checked={isSwitched}
         />
       </StyledDiv>
