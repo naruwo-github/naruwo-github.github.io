@@ -15,8 +15,10 @@ type Context = {
   setIsSwitched: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-// @ts-ignore
-export const LanguageContext = createContext<Context>()
+export const LanguageContext = createContext<Context>({
+  isSwitched: false,
+  setIsSwitched: (boolean) => {}
+})
 
 const App = () => {
   const [isSwitched, setIsSwitched] = useState<boolean>(false)
