@@ -1,7 +1,20 @@
-import {render, screen} from '@testing-library/react'
+import '@testing-library/jest-dom'
+import {render, screen, act, fireEvent} from '@testing-library/react'
 import Header from '../header/header'
 
-test('Switch on/off', async () => {
+describe('Switch testing', () => {
+  test('Initial state', async () => {
     render(<Header/>)
-    expect(screen.getByRole('switch')).toBe(true)
+    const languageSwitch = screen.getByRole('switch')
+    expect(languageSwitch).not.toBeChecked()
+  })
+
+  test('Click once', async () => {
+    render(<Header/>)
+    const languageSwitch = screen.getByRole('switch')
+    act(() => {
+      fireEvent.change(languageSwitch, { target: { checked: true } })
+    })
+    expect(languageSwitch).toBeChecked()
+  })
 })
