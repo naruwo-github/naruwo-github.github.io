@@ -4,7 +4,7 @@ import { AUTHOR } from '../config/env'
 const Footer = () => {
   return (
     <StyledFooter className="footer">
-      <StyledDiv className="copyright" data-testid="copyright">&copy;{AUTHOR}</StyledDiv>
+      <StyledDiv className="copyright">&copy;{AUTHOR}</StyledDiv>
     </StyledFooter>
   )
 }
