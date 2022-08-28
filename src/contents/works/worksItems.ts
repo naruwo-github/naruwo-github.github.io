@@ -24,7 +24,7 @@ const worksItems = [
     info: 'Roulette app for Android.'
   },
   {
-    ref: URL_HATENA,
+    ref: `${URL_GITHUB}/WariCan/blob/main/README.md`,
     img: warican,
     name: 'WariCan¥',
     info: 'Splitting bill app for iOS.'
