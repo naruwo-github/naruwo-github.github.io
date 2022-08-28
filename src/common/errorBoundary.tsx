@@ -1,20 +1,28 @@
-import React from "react"
+import React, { ErrorInfo, ReactNode } from "react"
 
-export default class ErrorBoundary extends React.Component {
-  constructor(props) {
+type Props = {
+  children?: ReactNode
+}
+
+type State = {
+  hasError: boolean
+}
+
+class ErrorBoundary extends React.Component<Props, State> {
+  constructor(props: Props) {
     super(props)
     this.state = {
       hasError: false
     }
   }
 
-  static getDerivedStateFromError(error) {
+  static getDerivedStateFromError(_: Error) {
     return {
       hasError: true
     }
   }
 
-  componentDidCatch(error, errorInfo) {
+  componentDidCatch(error: Error, errorInfo: ErrorInfo) {
     // You can also log the error to an error reporting service
     // logErrorToMyService(error, errorInfo)
   }
@@ -28,6 +36,8 @@ export default class ErrorBoundary extends React.Component {
         </>
       )
     }
-    return this.props.children; 
+    return this.props.children
   }
 }
+
+export default ErrorBoundary
