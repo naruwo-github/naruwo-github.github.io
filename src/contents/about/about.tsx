@@ -1,5 +1,5 @@
 import './style.css'
-import profileImg from '../../../public/assets/myself.png'
+import profileImg from '../../assets/myself.png'
 import { useContext } from 'react'
 import { LanguageContext } from '../../app'
 

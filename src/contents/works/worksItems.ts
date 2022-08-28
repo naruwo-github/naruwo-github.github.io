@@ -1,4 +1,4 @@
-import signboardPreparing from '../../../public/assets/signboard_preparing.png'
+import signboardPreparing from '../../assets/signboard_preparing.png'
 import { URL_GITHUB, URL_HATENA, URL_QIITA } from '../../config/env'
 
 const worksItems = [

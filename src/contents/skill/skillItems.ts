@@ -1,10 +1,10 @@
-import iconCs from '../../../public/assets/icon-cs.png'
-import iconTools from '../../../public/assets/icon-tools.png'
-import iconPractice from '../../../public/assets/icon-practice.png'
-import iconFront from '../../../public/assets/icon-front.png'
-import iconMobile from '../../../public/assets/icon-mobile.png'
-import iconBack from '../../../public/assets/icon-back.png'
-import iconDevops from '../../../public/assets/icon-devops.png'
+import iconCs from '../../assets/icon-cs.png'
+import iconTools from '../../assets/icon-tools.png'
+import iconPractice from '../../assets/icon-practice.png'
+import iconFront from '../../assets/icon-front.png'
+import iconMobile from '../../assets/icon-mobile.png'
+import iconBack from '../../assets/icon-back.png'
+import iconDevops from '../../assets/icon-devops.png'
 
 const skillItems = [
   {
