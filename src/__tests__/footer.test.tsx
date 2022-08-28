@@ -1,5 +1,5 @@
 import '@testing-library/jest-dom'
-import {render} from '@testing-library/react'
+import { render } from '@testing-library/react'
 import Footer from '../footer/footer'
 
 const ANSWER = '©NARUMI NOGAWA'
