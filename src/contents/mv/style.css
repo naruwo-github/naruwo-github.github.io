@@ -6,6 +6,17 @@
   text-align: center;
 }
 
+.mv-background-with-image {
+  position: absolute;
+  background-image: url("../../assets/mov-sb.gif");
+  background-position: center;
+  background-size: contain;
+  opacity: 8%;
+  width: 100%;
+  height: 100%;
+  z-index: -10000;
+}
+
 .mv-container {
   padding: 0 40px;
 }
@@ -17,6 +28,7 @@
   margin-bottom: 5px;
   letter-spacing: .1em;
 }
+
 .mv-subtitle {
   font-size: 20px;
   font-weight: bold;
@@ -42,6 +54,7 @@
   .mv-title {
     font-size: 30px;
   }
+
   .mv-subtitle {
     font-size: 16px;
     margin-bottom: 20px;
