@@ -4,7 +4,7 @@ import { useContext } from 'react'
 import { LanguageContext } from '../../app'
 
 const About = () => {
-  const {isSwitched, setIsSwitched} = useContext(LanguageContext)
+  const { isSwitched, setIsSwitched } = useContext(LanguageContext)
 
   return (
     <section className="about section" id="about">
@@ -12,7 +12,7 @@ const About = () => {
         <h2 className="title">ABOUT</h2>
         <div className="profile">
           <p className="profile-img">
-            <img src={profileImg} alt=""/>
+            <img src={profileImg} alt="" />
           </p>
           {createProfileBody(isSwitched)}
         </div>
