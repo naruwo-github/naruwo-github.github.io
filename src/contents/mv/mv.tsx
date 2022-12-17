@@ -8,7 +8,6 @@ const Mv = () => {
 
   return (
     <div className="mv">
-      <div className='mv-background-with-image' />
       <div className="mv-container">
         <p className="mv-title">{AUTHOR}</p>
         <p className="mv-subtitle">{TITLE}</p>
