@@ -27,7 +27,7 @@ const createProfileBody = (isEnglish: boolean) => {
       <div className="profile-body">
         <p>Chatting and snowboarding lover living in Hyogo prefecture.</p>
         <p>Currently, I am improving the UI/UX of EC sites and its modernizing as a web front-end engineer.</p>
-        <p>In the last six months, I was struggling in outside of front-end. For example, launching an inhouse web application, improving the E2E test environment, and migrating/implementing Google Analytics 4.</p>
+        <p>In the last six months, I was struggling in outside of front-end. For example, improving local develop environment for in-house developer, refactoring regacy JavaScript codes on frontend, and improving the E2E test environment.</p>
         Career(roughly)
         <br></br>
         ・I am bachelor/master on computer science at the University of Tsukuba
@@ -42,7 +42,7 @@ const createProfileBody = (isEnglish: boolean) => {
     <div className="profile-body">
       <p>おしゃべりとスノーボードが好きなアラサー兵庫県民。</p>
       <p>現在、WebフロントエンドのエンジニアとしてECサイトのUI/UX改善やモダナイゼーションをしています。</p>
-      <p>直近半年は、社内業務Webアプリケーションの立ち上げ、E2Eテスト環境の改善、Google Analytics4移行・導入に携わり、Webフロントエンド以外の領域でも奮闘しておりました。</p>
+      <p>直近半年は、社内のローカル開発環境整備業務、レガシーフロントエンドのリファクタリング、E2Eテスト環境の改善に携わり、Webフロントエンド以外の領域でも奮闘しておりました。</p>
       経歴(ざっくり)
       <br></br>
       ・学士と修士の計6年間、筑波大学でコンピュータサイエンスを学ぶ
