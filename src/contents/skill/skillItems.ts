@@ -21,10 +21,10 @@ const skillItems = [
     img: iconTools,
     name: 'Standard tools for software development',
     textJp: [
-      'Git, Docker, Shell Script, Vim, Google Workspaceといったツールの理解と経験があります。人並みの面倒くさがり屋なので、プログラム業務改善することもしばしば。'
+      'Git, Docker, Linux(Native/WSL), Shell Script, Vim, Google Workspaceといったツールの理解と経験があります。人並みの面倒くさがり屋なので、プログラム業務改善することもしばしば。'
     ],
     textEn: [
-      'Understanding and experience with tools such as Git, Docker, Shell Script, Vim, and Google Workspace. I often improve my work by scripts because of my laziness.',
+      'Understanding and experience with tools such as Git, Docker, Linux(Native/WSL), Shell Script, Vim, and Google Workspace. I often improve my work by scripts because of my laziness.',
     ]
   },
   {
