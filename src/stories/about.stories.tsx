@@ -3,7 +3,7 @@ import About from '../contents/about/about';
 import { LanguageContext } from '../app';
 
 export default {
-    title: 'Body/About',
+    title: 'Portfolio/Body/About',
     component: About,
 } as ComponentMeta<typeof About>;
 

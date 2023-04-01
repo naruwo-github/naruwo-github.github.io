@@ -4,7 +4,7 @@ import { LanguageContext } from '../app';
 import Header from '../header/header';
 
 export default {
-  title: 'Header',
+  title: 'Portfolio/Header',
   component: Header,
 } as ComponentMeta<typeof Header>;
 
