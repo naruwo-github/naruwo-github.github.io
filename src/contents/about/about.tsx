@@ -1,9 +1,11 @@
 import './style.css'
-import profileImg from '../../assets/myself.png'
 import { useContext } from 'react'
 import { LanguageContext } from '../../app'
 
-const About = () => {
+type Props = {
+  profileImagePath: string
+}
+const About = ({ profileImagePath }: Props) => {
   const { isSwitched, setIsSwitched } = useContext(LanguageContext)
 
   return (
@@ -12,7 +14,7 @@ const About = () => {
         <h2 className="title">ABOUT</h2>
         <div className="profile">
           <p className="profile-img">
-            <img src={profileImg} alt="" />
+            <img src={profileImagePath} alt="" />
           </p>
           {createProfileBody(isSwitched)}
         </div>
