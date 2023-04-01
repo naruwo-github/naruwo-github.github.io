@@ -2,15 +2,18 @@ import './common/ress.css'
 import './common/style.css'
 import './common/script'
 import Header from './header/header'
+import { AUTHOR, TITLE, URL_GITHUB, URL_HATENA, URL_QIITA } from './config/env'
 import Mv from './contents/mv/mv'
 import profileImg from './assets/myself.png'
 import About from './contents/about/about'
+import worksItems from "./contents/works/worksItems"
 import Works from './contents/works/works'
+import skillItems from './contents/skill/skillItems'
 import Skill from './contents/skill/skill'
+import { MAIL, URL_INSTAGRAM } from './config/env'
 import Contact from './contents/contact/contact'
 import Footer from './footer/footer'
 import { createContext, useState } from 'react'
-import { AUTHOR } from './config/env'
 
 type Context = {
   isSwitched: boolean
@@ -28,11 +31,11 @@ const App = () => {
     <LanguageContext.Provider value={{ isSwitched, setIsSwitched }}>
       <Header author={AUTHOR} />
       <main className="content">
-        <Mv />
+        <Mv author={AUTHOR} title={TITLE} urlGithub={URL_GITHUB} urlHatena={URL_HATENA} urlQiita={URL_QIITA} />
         <About profileImagePath={profileImg} />
-        <Works />
-        <Skill />
-        <Contact />
+        <Works worksItems={worksItems} />
+        <Skill skillItems={skillItems} />
+        <Contact mail={MAIL} urlInstagram={URL_INSTAGRAM} />
         <div id="scroller-page-top" className="move-to-top">
           <span className="material-icons-outlined">expand_less</span>
         </div>
