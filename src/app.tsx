@@ -6,9 +6,9 @@ import { AUTHOR, TITLE, URL_GITHUB, URL_HATENA, URL_QIITA } from './config/env'
 import Mv from './contents/mv/mv'
 import profileImg from './assets/myself.png'
 import About from './contents/about/about'
-import worksItems from "./contents/works/worksItems"
+import worksItems from "./config/worksItems"
 import Works from './contents/works/works'
-import skillItems from './contents/skill/skillItems'
+import skillItems from './config/skillItems'
 import Skill from './contents/skill/skill'
 import { MAIL, URL_INSTAGRAM } from './config/env'
 import Contact from './contents/contact/contact'
