@@ -25,7 +25,7 @@ const App = () => {
   const [isSwitched, setIsSwitched] = useState<boolean>(false)
   return (
     <LanguageContext.Provider value={{ isSwitched, setIsSwitched }}>
-      <Header />
+      <Header author={AUTHOR} />
       <main className="content">
         <Mv />
         <About />
