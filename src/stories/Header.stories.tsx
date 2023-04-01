@@ -1,25 +1,35 @@
-import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { Header } from './Header';
+import { LanguageContext } from '../app';
+import Header from '../header/header';
 
 export default {
-  title: 'Example/Header',
+  title: 'Header',
   component: Header,
-  parameters: {
-    // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
-    layout: 'fullscreen',
-  },
 } as ComponentMeta<typeof Header>;
 
 const Template: ComponentStory<typeof Header> = (args) => <Header {...args} />;
 
-export const LoggedIn = Template.bind({});
-LoggedIn.args = {
-  user: {
-    name: 'Jane Doe',
-  },
+export const Japanese = Template.bind({});
+Japanese.args = {
+  author: 'Taro Sample'
 };
+Japanese.decorators = [
+  (Story) => (
+    <LanguageContext.Provider value={{ isSwitched: false, setIsSwitched: () => { } }}>
+      <Story />
+    </LanguageContext.Provider>
+  ),
+];
 
-export const LoggedOut = Template.bind({});
-LoggedOut.args = {};
+export const English = Template.bind({});
+English.args = {
+  author: 'Taro Sample'
+};
+English.decorators = [
+  (Story) => (
+    <LanguageContext.Provider value={{ isSwitched: true, setIsSwitched: () => { } }}>
+      <Story />
+    </LanguageContext.Provider>
+  ),
+]
