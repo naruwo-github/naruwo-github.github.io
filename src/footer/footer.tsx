@@ -1,10 +1,13 @@
 import { StyledFooter, StyledDiv } from './style'
-import { AUTHOR } from '../config/env'
 
-const Footer = () => {
+type Props = {
+  author: string
+}
+
+const Footer = ({ author }: Props) => {
   return (
     <StyledFooter className="footer">
-      <StyledDiv className="copyright">&copy;{AUTHOR}</StyledDiv>
+      <StyledDiv className="copyright">&copy;{author}</StyledDiv>
     </StyledFooter>
   )
 }

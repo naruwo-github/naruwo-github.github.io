@@ -9,6 +9,7 @@ import Skill from './contents/skill/skill'
 import Contact from './contents/contact/contact'
 import Footer from './footer/footer'
 import { createContext, useState } from 'react'
+import { AUTHOR } from './config/env'
 
 type Context = {
   isSwitched: boolean
@@ -17,25 +18,25 @@ type Context = {
 
 export const LanguageContext = createContext<Context>({
   isSwitched: false,
-  setIsSwitched: (boolean) => {}
+  setIsSwitched: (boolean) => { }
 })
 
 const App = () => {
   const [isSwitched, setIsSwitched] = useState<boolean>(false)
   return (
-    <LanguageContext.Provider value={{isSwitched, setIsSwitched}}>
-      <Header/>
+    <LanguageContext.Provider value={{ isSwitched, setIsSwitched }}>
+      <Header />
       <main className="content">
-        <Mv/>
-        <About/>
-        <Works/>
-        <Skill/>
-        <Contact/>
+        <Mv />
+        <About />
+        <Works />
+        <Skill />
+        <Contact />
         <div id="scroller-page-top" className="move-to-top">
           <span className="material-icons-outlined">expand_less</span>
         </div>
       </main>
-      <Footer/>
+      <Footer author={AUTHOR} />
     </LanguageContext.Provider>
   )
 }
