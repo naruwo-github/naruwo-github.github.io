@@ -3,6 +3,7 @@ import './common/style.css'
 import './common/script'
 import Header from './header/header'
 import Mv from './contents/mv/mv'
+import profileImg from './assets/myself.png'
 import About from './contents/about/about'
 import Works from './contents/works/works'
 import Skill from './contents/skill/skill'
@@ -28,7 +29,7 @@ const App = () => {
       <Header author={AUTHOR} />
       <main className="content">
         <Mv />
-        <About />
+        <About profileImagePath={profileImg} />
         <Works />
         <Skill />
         <Contact />
