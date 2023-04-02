@@ -2,8 +2,9 @@ import '@testing-library/jest-dom'
 import { render } from '@testing-library/react'
 import Footer from '../footer/footer'
 
-const ANSWER = '©NARUMI NOGAWA'
+const AUTHOR = 'NARUMI NOGAWA'
+const EXPECTED = `©${AUTHOR}`
 test('Showing copyright correctly on footer', async () => {
-    render(<Footer />)
-    expect(document.querySelector('.copyright')).toHaveTextContent(ANSWER)
+    render(<Footer author={AUTHOR} />)
+    expect(document.querySelector('.copyright')).toHaveTextContent(EXPECTED)
 })
