@@ -5,11 +5,7 @@ import { LanguageContext } from '../app'
 import Switch from 'react-switch'
 import { StyledDiv, StyledLabel } from './style'
 
-type Props = {
-  author: string
-}
-
-const Header = ({ author }: Props) => {
+const Header = () => {
   const { isSwitched, setIsSwitched } = useContext(LanguageContext)
 
   return (
@@ -17,7 +13,7 @@ const Header = ({ author }: Props) => {
       <header className="header">
         <div className="container">
           <h1 className="header-logo">
-            <a href=".">{author}</a>
+            <a href=".">ChanNaru's Garage</a>
           </h1>
           <nav className="gnav">
             <ul className="gnav-list">

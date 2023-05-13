@@ -3,31 +3,31 @@ import { useContext } from 'react'
 import { LanguageContext } from '../../app'
 
 type Props = {
-  author: string
+  displayName: string
   title: string
   urlGithub: string
   urlHatena: string
   urlQiita: string
 }
 
-const Mv = ({ author, title, urlGithub, urlHatena, urlQiita }: Props) => {
+const Mv = ({ displayName, title, urlGithub, urlHatena, urlQiita }: Props) => {
   const { isSwitched, setIsSwitched } = useContext(LanguageContext)
 
   return (
     <div className="mv">
       <div className="mv-container">
-        <p className="mv-title">{author}</p>
+        <p className="mv-title">{displayName}</p>
         <p className="mv-subtitle">{title}</p>
         <p className="mv-text">
           {isSwitched
             ? 'I make you satisfied with by creating some applications/softwares.'
-            : 'ユーザーとお客様が心から満足できるアプリケーション/ソフトウェアをお作りいたします。'
+            : 'Web、スマホ問わず満足できるアプリケーションの開発をします。'
           }
         </p>
         <p className="mv-text">
-          {isSwitched && 'I am good at coding related to '}
+          {isSwitched && 'I am good at '}
           <a href="#skill">SKILL</a>
-          {!isSwitched && 'に関連するコーディングはおまかせください。'}
+          {!isSwitched && 'に関連してはおまかせください。'}
         </p>
         <br />
         <br />

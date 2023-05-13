@@ -2,7 +2,7 @@ import './common/ress.css'
 import './common/style.css'
 import './common/script'
 import Header from './header/header'
-import { AUTHOR, TITLE, URL_GITHUB, URL_HATENA, URL_QIITA } from './config/env'
+import { DISPLAY_NAME, AUTHOR, TITLE, URL_GITHUB, URL_HATENA, URL_QIITA } from './config/env'
 import Mv from './contents/mv/mv'
 import profileImg from './assets/myself.png'
 import About from './contents/about/about'
@@ -29,9 +29,9 @@ const App = () => {
   const [isSwitched, setIsSwitched] = useState<boolean>(false)
   return (
     <LanguageContext.Provider value={{ isSwitched, setIsSwitched }}>
-      <Header author={AUTHOR} />
+      <Header />
       <main className="content">
-        <Mv author={AUTHOR} title={TITLE} urlGithub={URL_GITHUB} urlHatena={URL_HATENA} urlQiita={URL_QIITA} />
+        <Mv displayName={DISPLAY_NAME} title={TITLE} urlGithub={URL_GITHUB} urlHatena={URL_HATENA} urlQiita={URL_QIITA} />
         <About profileImagePath={profileImg} />
         <Works worksItems={worksItems} />
         <Skill skillItems={skillItems} />
