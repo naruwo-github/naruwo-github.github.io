@@ -21,7 +21,7 @@ const Mv = ({ displayName, title, urlGithub, urlHatena, urlQiita }: Props) => {
         <p className="mv-text">
           {isSwitched
             ? 'I make you satisfied with by creating some applications/softwares.'
-            : 'Web、スマホ問わず満足できるアプリケーションの開発をします。'
+            : 'Web、スマホ問わず納得いくまで継続して開発します💪'
           }
         </p>
         <p className="mv-text">
