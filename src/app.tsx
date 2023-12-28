@@ -21,12 +21,12 @@ type Context = {
 }
 
 export const LanguageContext = createContext<Context>({
-  isSwitched: false,
+  isSwitched: true,
   setIsSwitched: (boolean) => { }
 })
 
 const App = () => {
-  const [isSwitched, setIsSwitched] = useState<boolean>(false)
+  const [isSwitched, setIsSwitched] = useState<boolean>(true)
   return (
     <LanguageContext.Provider value={{ isSwitched, setIsSwitched }}>
       <Header />
