@@ -1,73 +1,73 @@
 {
-  "name": "naruwo-github.github.io",
-  "version": "1.0.0",
-  "description": "My portfolio site hosted by Github Pages.\\ Please visit [here](https://naruwo-github.github.io/).",
-  "source": "./public/index.html",
-  "scripts": {
-    "start": "parcel ./public/index.html --dist-dir ./dev/",
-    "build": "parcel build ./public/index.html --dist-dir ./docs/",
-    "test": "jest",
-    "test-watch": "jest --watch",
-    "test-coverage": "jest --coverage",
-    "storybook": "NODE_OPTIONS='--openssl-legacy-provider' start-storybook -p 6006",
-    "build-storybook": "build-storybook"
-  },
-  "jest": {
-    "testEnvironment": "jsdom",
-    "moduleNameMapper": {
-      ".+\\.(css|styl|less|sass|scss|png|jpg)$": "identity-obj-proxy"
-    },
-    "roots": [
-      "./src"
-    ],
-    "transform": {
-      "^.+\\.tsx?$": "ts-jest"
-    }
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/naruwo-github/naruwo-github.github.io.git"
-  },
-  "author": "Narumi Nogawa",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/naruwo-github/naruwo-github.github.io/issues"
-  },
-  "homepage": "https://github.com/naruwo-github/naruwo-github.github.io#readme",
-  "dependencies": {
-    "jquery": "^3.6.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-error-boundary": "^4.0.3",
-    "react-switch": "^7.0.0",
-    "styled-components": "^5.3.9"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.21.4",
-    "@storybook/addon-actions": "^6.5.16",
-    "@storybook/addon-essentials": "^6.4.22",
-    "@storybook/addon-interactions": "^6.5.16",
-    "@storybook/addon-links": "^6.5.16",
-    "@storybook/addon-postcss": "^2.0.0",
-    "@storybook/builder-webpack4": "^6.5.16",
-    "@storybook/manager-webpack4": "^6.5.16",
-    "@storybook/react": "^6.5.16",
-    "@storybook/react-docgen-typescript-plugin": "1.0.6--canary.9.cd77847.0",
-    "@storybook/testing-library": "^0.0.13",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^14.0.0",
-    "@types/jest": "^29.5.0",
-    "@types/jquery": "^3.5.16",
-    "@types/react": "^18.0.31",
-    "@types/react-dom": "^18.0.11",
-    "@types/styled-components": "^5.1.26",
-    "babel-loader": "^9.1.2",
-    "identity-obj-proxy": "^3.0.0",
-    "jest": "^29.5.0",
-    "jest-environment-jsdom": "^29.5.0",
-    "parcel": "^2.8.3",
-    "process": "^0.11.10",
-    "ts-jest": "^29.0.5",
-    "typescript": "^4.9.3"
-  }
+	"name": "naruwo-github.github.io",
+	"version": "1.0.0",
+	"description": "My portfolio site hosted by Github Pages.\\ Please visit [here](https://naruwo-github.github.io/).",
+	"source": "./public/index.html",
+	"scripts": {
+		"start": "parcel ./public/index.html --dist-dir ./dev/",
+		"build": "parcel build ./public/index.html --dist-dir ./docs/",
+		"test": "jest",
+		"test-watch": "jest --watch",
+		"test-coverage": "jest --coverage",
+		"storybook": "NODE_OPTIONS='--openssl-legacy-provider' start-storybook -p 6006",
+		"build-storybook": "build-storybook"
+	},
+	"jest": {
+		"testEnvironment": "jsdom",
+		"moduleNameMapper": {
+			".+\\.(css|styl|less|sass|scss|png|jpg)$": "identity-obj-proxy"
+		},
+		"roots": [
+			"./src"
+		],
+		"transform": {
+			"^.+\\.tsx?$": "ts-jest"
+		}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/naruwo-github/naruwo-github.github.io.git"
+	},
+	"author": "Narumi Nogawa",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/naruwo-github/naruwo-github.github.io/issues"
+	},
+	"homepage": "https://github.com/naruwo-github/naruwo-github.github.io#readme",
+	"dependencies": {
+		"jquery": "^3.6.4",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-error-boundary": "^4.0.3",
+		"react-switch": "^7.0.0",
+		"styled-components": "^5.3.9"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.23.6",
+		"@storybook/addon-actions": "^6.5.16",
+		"@storybook/addon-essentials": "^6.4.22",
+		"@storybook/addon-interactions": "^6.5.16",
+		"@storybook/addon-links": "^6.5.16",
+		"@storybook/addon-postcss": "^2.0.0",
+		"@storybook/builder-webpack4": "^6.5.16",
+		"@storybook/manager-webpack4": "^6.5.16",
+		"@storybook/react": "^6.5.16",
+		"@storybook/react-docgen-typescript-plugin": "1.0.6--canary.9.cd77847.0",
+		"@storybook/testing-library": "^0.0.13",
+		"@testing-library/jest-dom": "^5.16.5",
+		"@testing-library/react": "^14.0.0",
+		"@types/jest": "^29.5.0",
+		"@types/jquery": "^3.5.29",
+		"@types/react": "^18.2.45",
+		"@types/react-dom": "^18.2.18",
+		"@types/styled-components": "^5.1.34",
+		"babel-loader": "^9.1.2",
+		"identity-obj-proxy": "^3.0.0",
+		"jest": "^29.5.0",
+		"jest-environment-jsdom": "^29.5.0",
+		"parcel": "^2.10.3",
+		"process": "^0.11.10",
+		"ts-jest": "^29.0.5",
+		"typescript": "^4.9.3"
+	}
 }
