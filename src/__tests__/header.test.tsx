@@ -5,17 +5,17 @@ import Header from '../header/header'
 const AUTHOR = 'NARUMI NOGAWA'
 describe('Switch testing', () => {
   test('Initial state', async () => {
-    render(<Header author={AUTHOR} />)
+    render(<Header />)
     const languageSwitch = screen.getByRole('switch')
-    expect(languageSwitch).not.toBeChecked()
+    expect(languageSwitch).toBeChecked()
   })
 
   test('Click once', async () => {
-    render(<Header author={AUTHOR} />)
+    render(<Header />)
     const languageSwitch = screen.getByRole('switch')
     act(() => {
-      fireEvent.change(languageSwitch, { target: { checked: true } })
+      fireEvent.change(languageSwitch, { target: { checked: false } })
     })
-    expect(languageSwitch).toBeChecked()
+    expect(languageSwitch).not.toBeChecked()
   })
 })
