@@ -2,7 +2,6 @@ import '@testing-library/jest-dom'
 import { render, screen, act, fireEvent } from '@testing-library/react'
 import Header from '../header/header'
 
-const AUTHOR = 'NARUMI NOGAWA'
 describe('Switch testing', () => {
   test('Initial state', async () => {
     render(<Header />)
